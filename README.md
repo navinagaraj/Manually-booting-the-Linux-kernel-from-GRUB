@@ -20,5 +20,6 @@ Now we can tell it to load or kernel image. (Just note that you must put in the 
 Next, we need to tell the kernel where it can find it's initialization RAM disk (initrd).
 
    grub>boot
+   
 Finally, you can go ahead and boot your system.
     

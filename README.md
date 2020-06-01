@@ -9,6 +9,7 @@ HOW DOES IT WORK :
         Manually booting your operating system from GRUB is actually pretty easy once you know what you need to do. Before trying to actually do anything with GRUB, you should examine what GRUB can actually see in your system. For starters, if you can see the GRUB prompt you know that the MBR is intact, and that GRUB has been properly loaded into memory. Great! Now let's poke around and see which disks may be visible to GRUB. You can start by using the ls command.
         
    grub> ls
+   
 All of our partitions are showing up here (yours may look slightly different, depending on how things are partitioned). Since it can see our boot volume, let's actually tell it to use that.
 
    grub>linux (hd0,6)/boot/vmlinuz root = /dev/sda6
